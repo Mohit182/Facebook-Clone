@@ -1,0 +1,36 @@
+.contacts {
+  padding: 15px 80px;
+  width: 100%;
+}
+
+.contacts__top {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+#hello {
+  font-size: x-large;
+  font-weight: 600;
+  margin-right: 20%;
+}
+
+.contacts__top__options {
+  width: 100%;
+  height: 100%;
+}
+.contacts__bottom {
+  display: flex;
+
+  flex-direction: column;
+}
+.contacts__bottom__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+.contacts__bottom__options > p {
+  margin-left: 15px;
+}

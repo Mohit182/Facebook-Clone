@@ -7,30 +7,26 @@ import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 
 function MessageSender() {
   const [input, setInput] = useState("");
-  const [imageURL, setImageURL] = useState("");
+  
 
   const submitHandler = (event) => {
     event.preventDefault();
     setInput("");
-    setImageURL("");
+    
   };
 
   return (
     <div className="messageSender">
       <div className="messageSender__top">
-        <Avatar />
+        <Avatar src='https://media-exp1.licdn.com/dms/image/C5603AQHNhBCBXUVv6A/profile-displayphoto-shrink_100_100/0/1626243167444?e=1647475200&v=beta&t=xrw9v_alG3F2tr8wpeYpJYaIvrTpFxXVjOJmE8RnkWA'/>
         <form>
           <input
             value={input}
             onChange={(event) => setInput(event.target.value)}
             className="messageSender__input"
-            placeholder="What's on your mind. Mohit Gupta?"
+            placeholder="What's on your mind, Mohit Gupta? "
           />
-          <input
-            value={imageURL}
-            onChange={(event) => setImageURL(event.target.value)}
-            placeholder="Image URL (Optional)"
-          />
+          
           <button
             className="messageSender__button"
             onClick={submitHandler}
