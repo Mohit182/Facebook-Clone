@@ -16,7 +16,7 @@ function Sidebar() {
         src="https://avatars.githubusercontent.com/u/56998922?v=4"
         title="Mohit Gupta"
       />
-      <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Informatin Center" />
+      <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center" />
       <SidebarRow Icon={EmojiFlagsIcon} title="Pages" />
       <SidebarRow Icon={PeopleIcon} title="Friends" />
       <SidebarRow Icon={ChatIcon} title="Messanger" />
