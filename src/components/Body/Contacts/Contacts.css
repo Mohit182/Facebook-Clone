@@ -30,6 +30,7 @@
   justify-content: start;
   align-items: center;
   margin-top: 20px;
+  cursor: pointer;
 }
 .contacts__bottom__options > p {
   margin-left: 15px;
