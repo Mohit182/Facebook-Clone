@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/Facebook-Clone/static/css/main.c9210191.css",
-    "main.js": "/Facebook-Clone/static/js/main.808f9b3a.js",
+    "main.css": "/Facebook-Clone/static/css/main.761cefc9.css",
+    "main.js": "/Facebook-Clone/static/js/main.9c2ce18d.js",
     "static/js/787.107ad715.chunk.js": "/Facebook-Clone/static/js/787.107ad715.chunk.js",
     "static/media/gautam.jpeg": "/Facebook-Clone/static/media/gautam.72bfa2fef6e55a9cfc4b.jpeg",
-    "static/media/group.jpeg": "/Facebook-Clone/static/media/group.dfdb2c37af1f32feb28e.jpeg",
-    "static/media/mohit.jpeg": "/Facebook-Clone/static/media/mohit.f664074ac5f0d2939955.jpeg",
+    "static/media/mohit.jpeg": "/Facebook-Clone/static/media/mohit.4f42e1c5c5cbc951a606.jpeg",
     "static/media/krina.jpeg": "/Facebook-Clone/static/media/krina.847db40bde930d72a704.jpeg",
     "static/media/archita.jpeg": "/Facebook-Clone/static/media/archita.9cf172b56e6d8f19ff29.jpeg",
     "static/media/kartikeya.jpeg": "/Facebook-Clone/static/media/kartikeya.e337d586c1ab9881249e.jpeg",
-    "static/media/group2.jpeg": "/Facebook-Clone/static/media/group2.29a5f7bd6865e2f16553.jpeg",
     "index.html": "/Facebook-Clone/index.html",
-    "main.c9210191.css.map": "/Facebook-Clone/static/css/main.c9210191.css.map",
-    "main.808f9b3a.js.map": "/Facebook-Clone/static/js/main.808f9b3a.js.map",
+    "main.761cefc9.css.map": "/Facebook-Clone/static/css/main.761cefc9.css.map",
+    "main.9c2ce18d.js.map": "/Facebook-Clone/static/js/main.9c2ce18d.js.map",
     "787.107ad715.chunk.js.map": "/Facebook-Clone/static/js/787.107ad715.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9210191.css",
-    "static/js/main.808f9b3a.js"
+    "static/css/main.761cefc9.css",
+    "static/js/main.9c2ce18d.js"
   ]
 }
