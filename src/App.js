@@ -5,12 +5,14 @@ import Sidebar from "./components/Body/Sidebar/Sidebar";
 import Contacts from "./components/Body/Contacts/Contacts";
 import Header from "./components/Header/Header";
 import Login from "./Login/Login";
+import { useStateValue } from "./StateProvider";
 
 function App() {
-  const user =null;
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="App">
-      {user ? (
+      {!user ? (
         <Login />
       ) : (
         <>
@@ -22,7 +24,6 @@ function App() {
           </div>
         </>
       )}
-      
     </div>
   );
 }
