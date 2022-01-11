@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Facebook-Clone/static/css/main.761cefc9.css",
+    "main.css": "/Facebook-Clone/static/css/main.453eb0bb.css",
     "main.js": "/Facebook-Clone/static/js/main.4425351b.js",
     "static/js/787.107ad715.chunk.js": "/Facebook-Clone/static/js/787.107ad715.chunk.js",
     "static/media/gautam.jpeg": "/Facebook-Clone/static/media/gautam.72bfa2fef6e55a9cfc4b.jpeg",
@@ -9,12 +9,12 @@
     "static/media/archita.jpeg": "/Facebook-Clone/static/media/archita.9cf172b56e6d8f19ff29.jpeg",
     "static/media/kartikeya.jpeg": "/Facebook-Clone/static/media/kartikeya.e337d586c1ab9881249e.jpeg",
     "index.html": "/Facebook-Clone/index.html",
-    "main.761cefc9.css.map": "/Facebook-Clone/static/css/main.761cefc9.css.map",
+    "main.453eb0bb.css.map": "/Facebook-Clone/static/css/main.453eb0bb.css.map",
     "main.4425351b.js.map": "/Facebook-Clone/static/js/main.4425351b.js.map",
     "787.107ad715.chunk.js.map": "/Facebook-Clone/static/js/787.107ad715.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.761cefc9.css",
+    "static/css/main.453eb0bb.css",
     "static/js/main.4425351b.js"
   ]
 }
