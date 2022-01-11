@@ -19,28 +19,28 @@ function Post({ profilePic, image, userName, timestamp, message }) {
       </div>
       <div className="post__bottom">
         <p>{message}</p>
-      </div>
 
-      <div className="post__image">
-        <img src={image} alt="" />
-      </div>
+        <div className="post__image">
+          <img src={image} alt="" />
+        </div>
 
-      <div className="post__options">
-        <div className="post__option">
-          <ThumbUpIcon />
-          <p>Like</p>
-        </div>
-        <div className="post__option">
-          <ChatBubbleOutLineIcon />
-          <p>Comment</p>
-        </div>
-        <div className="post__option">
-          <NearMeIcon />
-          <p>Share</p>
-        </div>
-        <div className="post__option">
-          <AccountCircleIcon />
-          <ExpandMoreOutLined />
+        <div className="post__options">
+          <div className="post__option">
+            <ThumbUpIcon />
+            <p>Like</p>
+          </div>
+          <div className="post__option">
+            <ChatBubbleOutLineIcon />
+            <p>Comment</p>
+          </div>
+          <div className="post__option">
+            <NearMeIcon />
+            <p>Share</p>
+          </div>
+          <div className="post__option">
+            <AccountCircleIcon />
+            <ExpandMoreOutLined />
+          </div>
         </div>
       </div>
     </div>

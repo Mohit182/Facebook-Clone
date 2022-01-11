@@ -10,24 +10,28 @@
   display: flex;
   position: relative;
   align-items: center;
-  padding: 15px;
+  padding: 5px;
 }
 
 .post__avatar {
   margin-right: 10px;
 }
 
-.post_topInfo > h3 {
+.post__topInfo > h3 {
   font-size: medium;
 }
-.post_topInfo > p {
+.post__topInfo > p {
   font-size: small;
   color: gray;
 }
-.post_bottom {
+.post__bottom {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 15px 25px;
+  padding: 10px 15px;
+}
+.post__bottom > p {
+  padding: 0px 0px 10px 5px;
+  font-size: large;
 }
 .post__image > img {
   width: 100%;
