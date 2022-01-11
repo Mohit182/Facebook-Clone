@@ -30,8 +30,8 @@ function StoryReel() {
         title='Kartikeya Kamal'
       />
       <Story
-        image='https://firebasestorage.googleapis.com/v0/b/facebook-clone-cf14e.appspot.com/o/aerchie.jpeg?alt=media&token=d869e9b4-f80a-4847-ba9d-97c21da4480b'
-        profileSrc="https://media-exp1.licdn.com/dms/image/C4E03AQEFvlPKb-Y8Nw/profile-displayphoto-shrink_100_100/0/1627477561256?e=1647475200&v=beta&t=0BV4vAtKygVnO5Y1iw-Ee-DtgtBiDXOM7CNobc-857I"
+        image={archita}
+        profileSrc="https://firebasestorage.googleapis.com/v0/b/facebook-clone-cf14e.appspot.com/o/aerchie.jpeg?alt=media&token=d869e9b4-f80a-4847-ba9d-97c21da4480b"
         title='Archita Kumari'
       />
 
