@@ -12,7 +12,7 @@ const firebaseConfig = {
   measurementId: "G-1KYJLFKCPJ",
 };
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-
+// console.log(process.env.REACT_APP_NOT_SECRET_CODE)
 // Use these for db & auth
 const db = getFirestore(firebaseApp);
 const auth = getAuth(firebaseApp);

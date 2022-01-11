@@ -5,6 +5,6 @@
 }
 .app__body {
   display: flex;
-  z-index: 100;
+  
   justify-content: space-between;
 }

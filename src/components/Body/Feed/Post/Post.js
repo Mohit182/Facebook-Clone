@@ -8,7 +8,9 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import NearMeIcon from "@material-ui/icons/NearMe";
 
 function Post({ profilePic, image, userName, timestamp, message }) {
+  
   return (
+    
     <div className="post">
       <div className="post__top">
         <Avatar src={profilePic} className="post__avatar" />

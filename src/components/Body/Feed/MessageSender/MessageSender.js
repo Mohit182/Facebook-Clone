@@ -10,27 +10,26 @@ import firebase from "firebase/compat/app";
 import { doc, setDoc, collection } from "firebase/firestore";
 
 
+function gen4() {
+  return Math.random().toString(16).slice(-4);
+}
+
+function simpleUniqueId(prefix) {
+  return (prefix || "").concat(
+    [gen4(), gen4(), gen4(), gen4(), gen4(), gen4(), gen4(), gen4()].join("")
+  );
+}
+
 function MessageSender() {
   const [{ user }, dispatch] = useStateValue();
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("");
 
-  const submitHandler = (event) => {
-
-    function gen4() {
-      return Math.random().toString(16).slice(-4);
-    }
-    
-    function simpleUniqueId(prefix) {
-      return (prefix || "").concat(
-        [gen4(), gen4(), gen4(), gen4(), gen4(), gen4(), gen4(), gen4()].join("")
-      );
-    }
-
+  const submitHandler = async (event) => {
     event.preventDefault();
     const id = simpleUniqueId();
     const docs = collection(db, "posts");
-    setDoc(doc(docs, "" + id), {
+    await setDoc(doc(docs, "" + id), {
       message: input,
       timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
       profilePic: user.photoURL,
