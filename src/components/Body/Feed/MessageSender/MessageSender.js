@@ -7,29 +7,37 @@ import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import { useStateValue } from "../../../../StateProvider";
 import db from "../../../../firebase";
 import firebase from "firebase/compat/app";
-import { doc, setDoc } from "firebase/firestore";
+import { doc, setDoc, collection } from "firebase/firestore";
+
 
 function MessageSender() {
   const [{ user }, dispatch] = useStateValue();
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("");
+
   const submitHandler = (event) => {
+
+    function gen4() {
+      return Math.random().toString(16).slice(-4);
+    }
+    
+    function simpleUniqueId(prefix) {
+      return (prefix || "").concat(
+        [gen4(), gen4(), gen4(), gen4(), gen4(), gen4(), gen4(), gen4()].join("")
+      );
+    }
+
     event.preventDefault();
-    const q = doc(db, "posts","la");
-   setDoc(q, {
+    const id = simpleUniqueId();
+    const docs = collection(db, "posts");
+    setDoc(doc(docs, "" + id), {
       message: input,
       timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
       profilePic: user.photoURL,
       userName: user.displayName,
       image: imageUrl,
-    })
-    // db.collection("posts").add({
-    //   message: input,
-    //   timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
-    //   profilePic: user.photoURL,
-    //   userName: user.displayName,
-    //   image: imageUrl,
-    // });
+    });
+
     setInput("");
     setImageUrl("");
   };

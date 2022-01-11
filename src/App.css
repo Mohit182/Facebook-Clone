@@ -1,7 +1,10 @@
 .app {
+  display: flex;
   background-color: #f1f2f5;
   height: 10vh;
 }
 .app__body {
   display: flex;
+  z-index: 100;
+  justify-content: space-between;
 }

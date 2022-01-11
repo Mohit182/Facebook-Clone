@@ -4,7 +4,6 @@ import Post from "./Post/Post";
 import StoryReel from "./StoryReel/StoryReel";
 import "./Feed.css";
 import db from "../../../firebase";
-
 import { collection, query, getDocs, orderBy } from "firebase/firestore";
 
 function Feed() {
