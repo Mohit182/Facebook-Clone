@@ -6,14 +6,27 @@ import "./Feed.css";
 import group from "./group.jpeg";
 import group2 from "./group2.jpeg";
 import db from "../../../firebase";
+import { collection, query, where, getDocs } from "firebase/firestore";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    db.collection("posts").onSnapShot((snapshot) => {
-      setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })));
-    });
+    const feedFunction = async () => {
+      const feedQuery = query(collection(db, "posts"));
+      const querySnapshot = await getDocs(feedQuery);
+      querySnapshot.forEach((doc) => {
+        console.log(doc.id, " => ", doc.data());
+      });
+
+      // Old Function
+      // db.collection("posts").onSnapShot((snapshot) => {
+      //   setPosts(
+      //     snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() }))
+      //   );
+      // });
+    };
+    feedFunction();
   }, []);
 
   return (

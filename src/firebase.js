@@ -1,8 +1,7 @@
 import firebase from "firebase/compat/app";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import 'firebase/compat/firestore';
-
-
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import "firebase/compat/firestore";
+import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyCPPDaiTEohe7eKKAbq3DHn8K56SjcylbQ",
   authDomain: "facebook-clone-cf14e.firebaseapp.com",
@@ -15,9 +14,9 @@ const firebaseConfig = {
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 // Use these for db & auth
-const db = firebaseApp.firestore();
+const db = getFirestore(firebaseApp);
 const auth = getAuth(firebaseApp);
-const provider = new firebase.auth.GoogleAuthProvider();
+const provider = new GoogleAuthProvider();
 
 export { auth, provider };
 export default db;
