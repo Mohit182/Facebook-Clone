@@ -3,9 +3,10 @@ import MessageSender from "./MessageSender/MessageSender";
 import Post from "./Post/Post";
 import StoryReel from "./StoryReel/StoryReel";
 import "./Feed.css";
-import archita from "./archita.jpeg";
+
 import mohit from './mohit.jpeg';
 import group from './group.jpeg';
+import group2 from './group2.jpeg';
 function Feed() {
   return (
     <div className="feed">
@@ -23,7 +24,7 @@ function Feed() {
         message="Lit"
         timestamp="Right now"
         userName="Mohit Gupta"
-        image={archita}
+        image={group2}
       />
       <Post
         profilePic="https://avatars.githubusercontent.com/u/56998922?v=4"
