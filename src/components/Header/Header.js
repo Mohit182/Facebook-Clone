@@ -16,6 +16,9 @@ import { useStateValue } from "../../StateProvider";
 
 function Header() {
   const [{ user }, dispatch] = useStateValue();
+  const signOutHandler = () => {
+    user=null;
+  };
   return (
     <div className="header">
       <div className="header__left">
@@ -59,6 +62,7 @@ function Header() {
         <IconButton>
           <ExpandMoreIcon />
         </IconButton>
+        <button onClick={signOutHandler}>Logout</button>
       </div>
     </div>
   );
