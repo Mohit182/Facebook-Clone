@@ -62,7 +62,7 @@ function Header() {
         <IconButton>
           <ExpandMoreIcon />
         </IconButton>
-        <button onClick={signOutHandler}>Logout</button>
+        
       </div>
     </div>
   );
